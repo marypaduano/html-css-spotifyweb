@@ -20,16 +20,21 @@ ul, li {
 
 .container-body{
     display: flex;
-    height: 100vh;
+    height: calc(100vh - 81px);
+    flex-grow: 1;
 }
 
 :root{
     --lightgrey: rgb(113, 116, 121);
 }
 
+/* ASIDE */
+
 .aside-bar{
     background-color: rgb(40, 40, 40); 
+    
 }
+
 
 .row{
     display: flex;    
@@ -51,7 +56,8 @@ ul, li {
     color: white;
     display: flex;
     gap: 24px;  
-    align-items: center;   
+    align-items: center;  
+    
     
     
 }
@@ -79,8 +85,8 @@ ul, li {
 }
 
 .preview{
-    line-height: 0px;
-    flex-shrink: 0;
+    line-height: 5px;
+    flex-shrink: 0;    
    
 }
 
@@ -90,6 +96,7 @@ ul, li {
 
 .title_album{
     line-height: 16px;
+    flex-wrap: nowrap; 
 }
 .title_song{
     font-size: 13px;
@@ -99,8 +106,9 @@ ul, li {
 
 .col-3__icon.short{
     color: var(--lightgrey);
-    margin: 0 20px;
-    gap: 16px;
+    gap: 14px;
+    
+
 }
 
 .time_line{
@@ -115,6 +123,65 @@ ul, li {
 
 .progress{
     background-color:var(--lightgrey);
-    width: 400px;
+    /* width: 400px; */
     height: 3px;
 }
+
+@media screen and (max-width: 639px){
+
+    .col-3__icon.short{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+    }    
+
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width: 200px;
+    background-color: black;
+    margin: 0;
+    display: flex;
+    
+}
+
+.row-sidebar{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    color: white;
+    justify-content: space-between;
+    
+}
+
+.row-header{
+    background-color: rgb(8, 11, 18);
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.col_sidebar{
+    color:white;
+}
+
+.container{
+    width: calc(100vw - 200px)
+}
+
+main{
+    background-color: rgb(20, 25, 34);
+}
+
+.menu{
+    
+   
+}
+
+
+
+
