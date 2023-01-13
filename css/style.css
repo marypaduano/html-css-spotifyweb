@@ -21,11 +21,13 @@ ul, li {
 :root {
 	--dark-blue: #141922;
 	--dark-gray: #282828;
+    --dark-top: rgb(8, 11, 18);
 	--sidebar-color: #000000;
 	--lightgrey: #7d7f84;
 	--sidebar-width: 230px;
 	--toolbar-height: 90px;
 }
+
 
 .container-body {
 	display: flex;
@@ -51,17 +53,15 @@ ul, li {
     flex-direction: column;
     gap: 15px;
 
-}
 
-.main-content {
-	flex-grow: 1;
-	overflow-y: auto;
-	background-color: var(--dark-blue);
-    flex-shrink: 0;
 }
 
 .logo-lg{
     max-width: 130px;
+}
+
+.logo-favicon{
+    display: none;
 }
 
 .menu-sidebar_icon,
@@ -73,8 +73,7 @@ ul, li {
 
 .playlist {
     flex-grow: 1;
-    display: flex;
-    flex-direction: column;
+
 }
 
 .fa-square-plus{
@@ -94,10 +93,52 @@ gap: 8px;
     gap: 8px;
 }
 
+
+.app{
+    color: var(--lightgrey);
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    
+}
+
+.download-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--lightgrey)
+}
+
+.download-icon img{
+    max-width: 16px;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-weight: 600;
+    margin: 0;
+}
+
+.login-icon{
+    max-width: 23px;
+    border: 1px solid currentColor;
+    background-color: var(--lightgrey);
+    border-radius: 50%;
+    padding: 3px;
+}
+
 .menu__icon > span,
 .playlist > li,
 .add-playlist_title{
     font-weight: 600;
+}
+
+.menu-add-playlist{
+    display: flex;
+    flex-direction: column;
 }
 
 .add-playlist_title{
@@ -105,6 +146,69 @@ gap: 8px;
     text-transform: uppercase;
     padding-bottom: 5px;
 }
+
+@media  screen and (max-width: 575px) {
+
+    .logo-lg,
+    .menu-add-playlist,
+    .menu__icon > span,
+    .login > span,
+    .app > span,
+    .download-icon > span {
+        display: none;
+            
+    }
+
+    .logo-favicon{
+        display: contents;
+        color: white;
+    }
+}
+
+/*MAIN*/
+
+.main-content {
+	flex-grow: 1;
+	overflow-y: auto;
+	background-color: var(--dark-blue);
+    flex-shrink: 0;
+}
+
+.row-top{
+    background-color: var(--dark-top);
+    display: flex;
+    justify-content: end;
+	align-items: center;
+    height: var(--toolbar-height);
+    flex-shrink: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center; 
+    flex-shrink: 0;
+    max-width: 100vw;
+}
+.menu-nav{
+    display: flex;
+    text-transform: uppercase;
+    font-size: 15px;
+    gap: 8px;
+    color: var(--lightgrey);
+}
+
+.button-top{
+    border-radius: 20px;
+    border: 1px solid currentColor;
+    padding: 10px;
+    color: white;
+    background-color: transparent;
+    margin: 0 10px;
+}
+
+
+
+
 
 
 
