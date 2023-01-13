@@ -11,12 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="container-body">
+<body  class="container-body">
+    <div class="content">
         <header class="sidebar">
             <div class="row-sidebar">
                 <div class="col_sidebar">
-                    <img src="./img/favicon.ico" alt="">
+                    <img class="logo-lg" src="./img/logo.svg" alt="">
                 </div>
                 <div class="col_sidebar">
                     123
@@ -24,7 +24,7 @@
             </div>
 
         </header>
-        <main>
+        <main class="main-content">
             <div class="container">
                 <div class="row-header">
 
@@ -37,13 +37,11 @@
         </nav>
 
         </main>
-    </div>
-    
+    </div>    
 
-<aside class="aside-bar">
-    <div class="row aside_bar">
-        <div class="col-3">
-            <ul class="col-3__icon">
+    <aside class="toolbar">
+        <div class="album-preview">
+            <ul class="preview__icon">
                 <li class="preview">
                     <img class="preview_album" src="./img/sinister.jpeg" alt="">
                 </li>   
@@ -52,7 +50,7 @@
                     <h6 class="title_song">Brano Nome</h6>
                 </li>                     
             </ul>
-            <ul class="col-3__icon short">
+            <ul class="preview__icon short">
                 <li>
                     <i class="fa-regular fa-heart"></i>
                 </li>
@@ -62,8 +60,8 @@
             </ul>
 
         </div>
-        <div class="col-6">
-            <ul class="col-6__icon">
+        <div class="player">
+            <ul class="player__icon">
                 <li>
                     <i class="fa-solid fa-shuffle"></i>
                 </li>
@@ -80,7 +78,7 @@
                     <i class="fa-solid fa-arrow-rotate-right"></i>
                 </li>
             </ul>
-        <div class="col-6">
+        <div class="timeline">
             <ul class="time_line">
                 <li class="time__progress">0:25</li>
                 <li class="progress">
@@ -92,8 +90,8 @@
         </div>
             
         </div>
-        <div class="col-3">
-            <ul class="col-3__icon">
+        <div class="audio-command">
+            <ul class="audio__icon">
                 <li>
                     <i class="fa-solid fa-bars"></i>
                 </li>
@@ -108,9 +106,8 @@
             </ul>
             
         </div>
-    </div>
 
-</aside>
+    </aside>
 
 </body>
 </html>
