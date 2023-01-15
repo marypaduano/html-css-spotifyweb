@@ -139,6 +139,7 @@ gap: 8px;
 .menu-add-playlist{
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .add-playlist_title{
@@ -163,6 +164,11 @@ gap: 8px;
         display: contents;
         color: white;
     }
+
+    .menu-sidebar{
+        flex-grow: 1;
+    }
+
 }
 
 /*MAIN*/
