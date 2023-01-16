@@ -14,6 +14,12 @@ ul, li {
   
 }
 
+a{
+    text-decoration: none;
+    color: currentColor;
+    display: inline;
+}
+
 .html{
     font-family: 'Roboto', sans-serif;
 }
@@ -69,14 +75,21 @@ ul, li {
     
 }
 
+
+
+
 .playlist {
     flex-grow: 1;
 
 }
 
-.fa-square-plus{
+.plus{
     font-size: 40px;
     display: flex;
+}
+
+{
+    color: white;
 }
 
 .menu-playlist_icon{
@@ -90,6 +103,7 @@ gap: 8px;
     max-width: 22px;   
     gap: 8px;
 }
+
 
 
 .app{
@@ -214,6 +228,8 @@ gap: 8px;
     
 }
 
+
+
 .button-top{
     border-radius: 20px;
     border: 1px solid currentColor;
@@ -223,6 +239,7 @@ gap: 8px;
     margin: 12px;
     flex-shrink: 0;
 }
+
 
 .content_music{
     color: white;
@@ -264,12 +281,6 @@ gap: 8px;
        
     }
 }
-
-
-
-
-
-
 
 
 /*TOOLBAR */
@@ -358,6 +369,7 @@ gap: 8px;
     gap: 15px;
 }
 
+
 .progress,
 .progress-bar{
     border-radius: 999px;
@@ -392,17 +404,31 @@ gap: 8px;
     padding: 0 8px;
 }
 
+    
+/*HOVER EFFECT*/
 
-
-
-
-
-
-
-@media screen and (max-width: 639px){
-
+.fa-circle-play:hover{
+    transform: scale(1.1);
 }
 
+.button-top:hover{
+    transform: scale(1.1);
+}
 
-    
+li:hover{
+    color: white;
+}
 
+ul li a:hover,
+.download-icon:hover,
+.menu-playlist_icon:hover{
+    color: white;
+}
+
+.album_info .subtitle:hover{
+    color: white;
+}
+
+.timeline .progress-bar:hover{
+   background-color: greenyellow;
+}
