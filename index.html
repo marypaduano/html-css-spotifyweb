@@ -105,25 +105,28 @@
 
     <aside class="toolbar">
         <div class="album-preview">
-            <ul class="preview__icon">
-                <li class="preview">
-                    <img class="preview_album" src="./img/sinister.jpeg" alt="">
-                </li>   
-                <li class="title_album">
-                    <h4>Sinister</h4>
-                    <h6 class="title_song">Brano Nome</h6>
-                </li>                     
+            <div class="album">
+              <figure class="album_figure">
+                <img src="./img/sinister.jpeg" alt="">
+              </figure>
+      
+              <div class="album_info">
+                  <h3 class="title_album">Sinister</h3>
+                  <h4 class="title_song">Nome brano</h4>
+              </div>
+      
+            </div>
+      
+            <ul class="album-icon">
+              <li>
+                <i class="fa-regular fa-heart"></i>
+              </li>
+              <li>
+                <i class="fa-regular fa-folder"></i>
+              </li>
             </ul>
-            <ul class="preview__icon short">
-                <li>
-                    <i class="fa-regular fa-heart"></i>
-                </li>
-                <li>
-                    <i class="fa-regular fa-folder"></i>
-                </li>
-            </ul>
-
-        </div>
+          </div>
+        
         <div class="player">
             <ul class="player__icon">
                 <li>
@@ -142,29 +145,33 @@
                     <i class="fa-solid fa-arrow-rotate-right"></i>
                 </li>
             </ul>
-        <div class="timeline">
-            <ul class="time_line">
-                <li class="time__progress">0:25</li>
-                <li class="progress">
+            <div class="timeline">
+                <ul class="time_line">
+                    <li class="time__progress">0:25</li>
+                    <li class="progress">
+                        <div class="progress-bar"></div>
 
-                </li>
-                <li class="time__progress">4:35</li>
-            </ul>
+                    </li>
+                    <li class="time__progress">4:35</li>
+                </ul>
 
-        </div>
+            </div>
             
         </div>
         <div class="audio-command">
-            <ul class="audio__icon">
+            <ul class="audio_icon">
                 <li>
                     <i class="fa-solid fa-bars"></i>
                 </li>
                 <li>
                     <i class="fa-solid fa-tv"></i>
                 </li>
-                <li>
+                <li class="audio_control">
                     <i class="fa-solid fa-volume-high"></i>
-                    <!-- progress-bar_audio -->
+                    <li class="progress">
+                        <div class="progress-bar"></div>
+
+                    </li>
                     
                 </li>
             </ul>
