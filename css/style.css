@@ -43,7 +43,6 @@ ul, li {
 /*SIDEBAR */
 
 .sidebar {
-	flex-basis: var(--sidebar-width);
 	flex-shrink: 0;
 	overflow: hidden;
 	background-color: var(--sidebar-color);
@@ -184,8 +183,9 @@ gap: 8px;
 .main-content {
 	flex-grow: 1;
 	overflow-y: auto;
+    overflow-x: hidden;
 	background-color: var(--dark-blue);
-    flex-shrink: 0;
+    
 }
 
 .row-top{
@@ -209,6 +209,8 @@ gap: 8px;
     gap: 8px;
     color: var(--lightgrey);
     flex-wrap: wrap;
+    justify-content: center;
+
     
 }
 
@@ -225,34 +227,42 @@ gap: 8px;
 .content_music{
     color: white;
     padding: 26px;
+    display: flex;
+    flex-direction: column;
   
 }
 
 .title-list{
-    padding: 26px 0;
+    padding-bottom: 22px;
 }
 
-.carousel-row{
-    display: flex;
-}
+
 
 .carousel{
     gap: 14px;
     display: flex;
-    flex-grow: 1;
+}
+
+.carousel-row{
+    flex-shrink: 0;
 }
 
 .carousel_item{
     text-align: center;
-    width: 175px;
+    width: 160px;
     aspect-ratio: 1/1;
 	object-fit: cover;
 	object-position: center;
 }
 
-.carousel_item img{
-    display: block;
-    width: 100%;
+
+
+@media  screen and (max-width: 575px) {
+
+    .carousel{
+        flex-wrap: wrap;
+       
+    }
 }
 
 
