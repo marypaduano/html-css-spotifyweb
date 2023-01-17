@@ -205,6 +205,18 @@ gap: 8px;
         padding: 0;
     }
 
+    
+    .menu__icon::before{
+        content: "";
+        width: 4px;
+        background-color: rgb(156, 248, 18);
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        display: none !important;
+    }    
+
 }
 
 /*MAIN*/
