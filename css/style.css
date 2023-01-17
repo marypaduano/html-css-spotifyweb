@@ -151,38 +151,6 @@ gap: 8px;
     width: 22px;
 }
 
-.menu__icon{
-    position: relative;
-}
-
-.menu__item{
-    position: relative;
-}
-
-.menu__icon::before{
-    content: "";
-    width: 4px;
-	background-color: rgb(156, 248, 18);
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-    display: none;
-}
-
-.menu__item::before{
-    content: "";
-    width: 30px;
-    height: 2px;
-	background-color: rgb(156, 248, 18);
-	position: absolute;
-    left: 50%;
-    right: 50%;
-    bottom: 0;
-    transform: translate(-50%, -50%);
-    display: none;
-}
-
 
 
 .menu-add-playlist{
@@ -277,7 +245,6 @@ gap: 8px;
     color: var(--lightgrey);
     flex-wrap: wrap;
     justify-content: center;
-
     
 }
 
@@ -418,7 +385,7 @@ gap: 8px;
 
 
 .fa-circle-play{
-    font-size: 28px;
+    font-size: 32px;
     gap: 15px;
 }
 
@@ -437,6 +404,12 @@ gap: 8px;
     background-color: white;
 	height: 4px;
 	width: 20%;
+    position: relative;
+}
+
+.progress-bar::after{
+    content: "";
+
 }
 
 .time_line{
@@ -484,6 +457,38 @@ ul li a:hover,
     color: white;
 }
 
+.menu__icon,
+.menu__item{
+    position: relative;
+}
+
+
+.menu__icon::before{
+    content: "";
+    width: 4px;
+	background-color: rgb(156, 248, 18);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+    display: none;
+}
+
+.menu__item::before{
+    content: "";
+    width: 30px;
+    height: 2px;
+	background-color: rgb(156, 248, 18);
+	position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+
+
 .menu__icon:hover::before,
 .menu__icon:active::before{
     display: block;
@@ -528,6 +533,23 @@ ul li a:hover,
 
 .carousel_item > img:hover{
     opacity: 0.3;
+}
+
+.progress-bar::after{
+    width: 12px;
+    height: 12px;
+	background-color: white;
+    border-radius: 50%;
+	position: absolute;
+    right: -10px;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.progress-bar:hover::after{
+    display: block;
 }
 
 
