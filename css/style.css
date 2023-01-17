@@ -169,17 +169,16 @@ gap: 8px;
 
     .logo-lg,
     .menu-add-playlist,
-    .menu__icon > span,
+    .menu__icon > a,
     .login > span,
     .app > span,
-    .download-icon > span {
+    .download-icon > a {
         display: none;
             
     }
 
     .logo-favicon {
         display: contents;
-        color: white;
 
     }
 
@@ -250,7 +249,7 @@ gap: 8px;
 }
 
 .title-list{
-    padding: 20px;
+    padding: 20px 0;
 }
 
 
@@ -277,10 +276,11 @@ gap: 8px;
 @media  screen and (max-width: 878px) {
 
     .carousel{
-        flex-wrap: wrap;
-       
+        flex-wrap: wrap;       
     }
 }
+
+
 
 
 /*TOOLBAR */
@@ -431,4 +431,35 @@ ul li a:hover,
 
 .timeline .progress-bar:hover{
    background-color: greenyellow;
+}
+
+.carousel_item{
+    position: relative;
+
+}
+
+.carousel_item > img{
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+}
+
+.playhover {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+.carousel_item:hover .playhover{
+    opacity: 1;
+}
+
+.carousel_item > img:hover{
+    opacity: 0.3;
 }
