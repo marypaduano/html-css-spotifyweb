@@ -263,7 +263,7 @@ gap: 8px;
 
 .content_music{
     color: white;
-    padding: 26px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
   
@@ -271,6 +271,10 @@ gap: 8px;
 
 .title-list{
     padding: 20px 0;
+}
+
+.title_album{
+    line-height: 20px;
 }
 
 
@@ -290,6 +294,11 @@ gap: 8px;
     aspect-ratio: 1/1;
 	object-fit: cover;
 	object-position: center;
+    flex-basis: calc(100% / 6);
+}
+
+.carousel_item img{
+    margin-bottom: 5px;
 }
 
 
@@ -297,7 +306,22 @@ gap: 8px;
 @media  screen and (max-width: 878px) {
 
     .carousel{
-        flex-wrap: wrap;       
+        flex-wrap: wrap;     
+    }
+}
+
+@media  screen and (max-width: 640px) {
+
+    .carousel_item{
+        flex-basis: calc(100% / 2 - 28px);
+    }
+
+    .carousel{
+        justify-content: center;
+    }
+
+    .carousel-row{
+        padding-left: 22px;
     }
 }
 
