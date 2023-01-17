@@ -57,7 +57,6 @@ a{
     gap: 15px;
     padding: 15px 0;
 
-
 }
 
 .logo-lg{
@@ -79,11 +78,9 @@ a{
     
 }
 
-
 .plus{
     font-size: 40px;
 }
-
 
 
 .menu-playlist_icon{
@@ -98,8 +95,7 @@ gap: 8px;
     gap: 8px;
     flex-direction: column;
     padding-left: 15px;
-    padding-right: 12px;
-    
+    padding-right: 12px;    
 }
 
 .download-icon {
@@ -150,8 +146,6 @@ gap: 8px;
 .menu__icon img{
     width: 22px;
 }
-
-
 
 .menu-add-playlist{
     display: flex;
@@ -225,16 +219,17 @@ gap: 8px;
 
 .row-top{
     background-color: var(--dark-top);
-    display: flex;
-    justify-content: end;
-	align-items: center;
     flex-shrink: 0;
+    position: fixed;
+    opacity: 0.8;
+    width: 100vw;
+    height: 70px;
 }
 
 .navbar{
     display: flex;
     justify-content: center;
-    padding-top: 15px;
+    padding-top: 90px;
  
 }
 .menu-nav{
@@ -257,7 +252,8 @@ gap: 8px;
     color: white;
     background-color: transparent;
     margin: 12px;
-    flex-shrink: 0;
+    right: 10px;
+    position: absolute;
 }
 
 
